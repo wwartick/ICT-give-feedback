@@ -3,3 +3,85 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    background-color: #36393B;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #a5d8ff;
+    color: #8f6668;
+    gap: 1.5rem;
+    padding: 3rem 4rem;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 6px 5px 0 3px #7a9094;
+}
+
+textarea{
+    height: 90px;
+    padding: 1rem;
+    resize: none;
+    background-color: #6b7c807c;
+    color: #ffffff;
+    outline: none;
+
+    &::placeholder{
+        color: #ffffff;
+    }
+}
+
+.checkbox-holder{
+    display: flex;
+    gap: .5rem;
+    align-items: flex-start;
+    user-select: none;
+
+    input{
+        scale: 1.25;
+        accent-color: #8f6668;
+    }
+
+    >label{
+        line-height: 1rem;
+    }
+}
+
+button{
+    height: 3rem;
+    background-color: #8f6668;
+    color: #a5d8ff;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #8f6668 50%, #36393B 50%) top;
+    background-size: 100% 200%;
+    transition: scale 200ms ease,
+                background-position 1000ms ease-in-out;
+
+    &:hover{
+        scale: 1.03;
+        background-position: bottom;
+    }
+
+    &:active{
+        scale: .98;
+    }
+}
+
+input:hover,
+u:hover,
+button:hover{
+    cursor: pointer;
+}
+
+u:active{
+    color: purple;
+}
+
+

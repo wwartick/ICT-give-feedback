@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Give Feedback</title>
 </head>
 <body>
     <div class="main-container">
-        <h3>Give Feedback</h3>
+        <h2>Give Feedback</h2>
         <span>Your Thoughts are valuable in helping improve our products</span>
         <textarea name="textarea" id="textarea" cols="45" rows="7"
         placeholder="Let us know what's on your mind"></textarea>
-        <input type="checkbox" name="privacy" id="privacy">
-        <label for="privacy"> I may be contacted about this feedback. See your <u>privacy policy</u> </label>
-        <input type="checkbox" name="research" id="research">
-        <label for="research"> I'd like to help improve the products by joining the <u>Research Group</u> </label>
+        <div class="checkbox-holder">
+            <input type="checkbox" name="privacy" id="privacy">
+            <label> I may be contacted about this feedback. See your <u>privacy policy</u> </label>
+        </div>
+        <div class="checkbox-holder">
+            <input type="checkbox" name="research" id="research">
+            <label> I'd like to help improve the products by joining the <u>Research Group</u> </label>
+        </div>
         <button>Send feedback</button>
     </div>
 </body>
